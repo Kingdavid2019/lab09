@@ -164,9 +164,15 @@
         if (height == 1) 
         {
     	    //TODO
+            return 1;
         }
         
     	//TODO
+        else {
+            int nodes = Math.pow(branchingFactor, height-1);
+            nodes += nnaryTreeSize(branchFactor, height -1);
+            return nodes;
+        }
     }
 
     /** **********************************************************************
