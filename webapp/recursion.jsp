@@ -186,6 +186,8 @@
     public int treeSum(Tree tree)
     {
     	//TODO
+        int sum = 0;
+        
         if (tree.getChildren().size() == 0){
             return tree.getValue();
         } else {
