@@ -186,6 +186,16 @@
     public int treeSum(Tree tree)
     {
     	//TODO
+        if (tree.getChildren().size() == 0){
+            return tree.getValue();
+        } else {
+            ArrayList<Tree> children = tree.getChildren();
+            sum = tree.getValue();
+            for(int i = 0; i < children.size(); ++ i){
+                sum += treeSum(children.get(i));
+            }
+            return sum;
+        }
     }
     
     /** **********************************************************************
