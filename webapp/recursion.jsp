@@ -169,8 +169,8 @@
         
     	//TODO
         else {
-            int nodes = Math.pow(branchingFactor, height-1);
-            nodes += nnaryTreeSize(branchFactor, height -1);
+            int nodes = (int) Math.pow(branchingFactor, height-1);
+            nodes += nnaryTreeSize(branchingFactor, height -1);
             return nodes;
         }
     }
